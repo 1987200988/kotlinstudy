@@ -6,17 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.kotlinstudy.R
 
-class VideoFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        var tv = TextView(activity)
-        tv.setText("xixi")
+class VideoFragment : Fragment() { override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    val videoFragmentView = layoutInflater.inflate(R.layout.fragment_video, container)
 
-        return tv
+
+
+    return videoFragmentView
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

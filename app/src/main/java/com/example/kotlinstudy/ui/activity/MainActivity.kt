@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2021 Baidu, Inc. All Rights Reserved.
- */
+
 package com.example.kotlinstudy.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+// var 是变量   val 类似于final
 
 //    初始化变量必须赋值或者延迟初始化 因此通过？初始化允许变量为null但是使用此变量时需加！！通知编译器不做非空校验
 //    private  var tabLayout:TabLayout? = null
@@ -70,6 +69,22 @@ class MainActivity : AppCompatActivity() {
         })
 
         tabLayout.setupWithViewPager(viewPager)
+
+        viewPager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
+            override fun onPageSelected(position: Int) {
+
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+
+            }
+
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
+            }
+        })
+
+
 
 
     }
